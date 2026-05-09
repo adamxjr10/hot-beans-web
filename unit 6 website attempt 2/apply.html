@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Hot Beans - Apply</title>
+</head>
+<body>
+    <nav>
+        <div class="hb-logo"><span class="hb-top">HB</span><span class="hb-bottom">WEB</span></div>
+        <a href="index.html">About Us</a>
+        <a href="profiles.html">Employee Testimony</a>
+        <a href="courses.html">dev courses</a>
+        <a href="jobs.html">Careers</a>
+        <a href="apply.html" class="active">Apply Now</a>
+    </nav>
+
+    <div class="container" style="text-align: left;">
+        <h1 style="text-align: center; font-size: 3rem; margin-bottom: 50px;">Application Form</h1>
+        <form id="applyForm">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
+                <div>
+                    <h3>Personal Details</h3>
+                    Full name: <input type="text" id="fullName" placeholder="John Doe">
+                    Address: <input type="text" id="address">
+
+                    Date of birth: <input type="date" id="dob">
+
+                    Email: <input type="text" id="email" placeholder="email@example.com">
+
+                    Phone Number: <input type="text" id="phone" placeholder="e.g. 07123456789">
+                </div>
+                <div>
+                    <h3>Qualifications & Documents</h3>
+                    <textarea id="qualifications" style="height: 150px;" placeholder="List your coding skills..."></textarea>
+
+                    Upload CV (PDF/Doc):
+                    <input type="file" id="cvUpload" accept=".pdf,.doc,.docx" style="border:none; padding:10px 0;">
+
+                    Current/Last Employer: <input type="text" id="employer">
+                </div>
+            </div>
+            <button type="submit" class="apply-btn" style="width: 100%;">Submit Application</button>
+        </form>
+    </div>
+
+    <footer style="margin-top: 100px; padding: 40px; border-top: 1px solid #eee; text-align: center;">
+        <p class="copyright">&copy; 2026 HOT BEANS WEB. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
